@@ -1,0 +1,17 @@
+always return entire collection object;
+
+if (prop != tracks && value != "") {
+    make prop == value;
+}
+
+else if (prop == tracks && tracks == not available) {
+    create empty array [] and add value to it; 
+}
+
+else if (prop == tracks && value != "") {
+    add value to end of the album's existing tracks array;
+}
+
+else {
+    delete given prop property from album;
+}
