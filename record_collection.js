@@ -21,7 +21,17 @@ const recordCollection = {
 
 // Only change code below this line
 function updateRecords(records, id, prop, value) {
-  return records;
+    
+if (prop != tracks && value != "") {
+     prop = value;
+} else if (prop == tracks && tracks == []) {
+    tracks = [value]; 
+} else if (prop == tracks && value != "") {
+    tracks[-1];
+} else {
+    pop.prop; //delete given prop property from album
+}
+    return records;
 }
 
 updateRecords(recordCollection, 5439, 'artist', 'ABBA');
