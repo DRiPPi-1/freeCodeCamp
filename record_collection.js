@@ -22,16 +22,17 @@ const recordCollection = {
 // Only change code below this line
 function updateRecords(records, id, prop, value) {
     
-if (prop != tracks && value != "") {
-     prop = value;
-} else if (prop == tracks && tracks == []) {
-    tracks = [value]; 
-} else if (prop == tracks && value != "") {
-    tracks[-1];
-} else {
-    pop.prop; //delete given prop property from album
-}
-    return records;
+  if (prop != "tracks" && value != "") {
+      records[id][prop] = value;
+  } else if (prop == "tracks" && "tracks" == []) {
+    records[id][prop] = [value]; 
+  } else if (prop === "tracks" && value != "") {
+    records[id][prop].push(value);
+  } else if (value === "") {
+    delete records[id][prop]; //delete given prop property from album
+  }
+  
+  return records;
 }
 
 updateRecords(recordCollection, 5439, 'artist', 'ABBA');
