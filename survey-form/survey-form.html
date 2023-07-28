@@ -4,6 +4,75 @@
 </head>
 <body>
     <h1 id="title">Hlumelo Siyo Foundation Bursary Form</h1>
-    <p>Complete this form to stand a chance to be one of our bursars.</p>
+    <p id="description">Complete this form to stand a chance to be selected as one of our bursars.</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <br><br>
+        <input type="text" id="name" placeholder="Enter Name & Surname">
+        <br><br>
+        <label for="email" id="email-label">Email</label>
+        <br><br>
+        <input type="email" id="email" placeholder="Enter valid email address">
+        <br><br>
+        <label for="number" id="number-label">Age</label>
+        <br><br>
+        <input type="number" id="number" placeholder="Age" min="18" max="120">
+        <p>Race</p>
+        <select name="race" id="dropdown" required="">
+            <option value="" disabled="" selected="">Select race</option>
+            <option value="african">African</option>
+            <option value="asian">Asian</option>
+            <option value="coloured">Coloured</option>
+            <option value="white">White</option>
+            <option value="other">Other</option>
+        </select>
+        <p>Gender</p>
+        <label>
+            <input type="radio" value="female" name="user-recommend">
+            Female
+        </label>
+        <br>
+        <label>
+            <input type="radio" value="male" name="user-recommend">
+            Male
+        </label>
+        <br>
+        <label>
+            <input type="radio" value="other" name="user-recommend">
+            Prefer not to say
+        </label>
+        <p>
+            Checklist of notes and instructions.
+            <span>(Check all completed)</span>
+        </p>
+        <label>
+            <input name="prefer" value="front-end-projects" type="checkbox">
+            Attach cover letter stating your field of interest and motivation.
+        </label>
+        <br>
+        <label>
+            <input name="prefer" value="front-end-projects" type="checkbox">
+            Attach latest grade 12 results and academic transcript to date.
+        </label>
+        <br>
+        <label>
+            <input name="prefer" value="front-end-projects" type="checkbox">
+            Attach proof of registration.
+        </label>
+        <br>
+        <label>
+            <input name="prefer" value="front-end-projects" type="checkbox">
+            Attach certified copy of the applicant’s south african id.
+        </label>
+        <br>
+        <label>
+            <input name="prefer" value="front-end-projects" type="checkbox">
+            Attach certified copies of parent(s) or gurdaian’s south african id’s.
+        </label>
+        <p>Write a brief motivation on why you should be selected.</p>
+        <textarea name="comment" id="comments" placeholder="Enter motivation here..."></textarea>
+        <br><br>
+        <button type="submit" id="submit">Submit</button>
+    </form>
 </body>
 </html>
